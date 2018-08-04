@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>It's Our Earth</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load static %}
+    <link href="{% static 'bot/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'bot/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <script src="{% static 'bot/vendor/jquery/jquery.min.js' %}"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'bot/css/agency.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+      
+
+      {% block extra_js %}{% endblock %}
+      {% block modal %}{% endblock %}
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">It's Our Earth</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To It's Our Earth!</div>
+          <div class="intro-heading text-uppercase">The Official NGO Of JIIT</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Explore Us !</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About Us</h2>
+            <h3 class="section-subheading text-muted">We are a group of students pursuing graduation from Jaypee Institute Of Information Technology, Noida, coming from various societal and cultural backgrounds who've joined hands to try and make a change in our society and if not make, then just to inspire the minds around us about the burning issues and problems surrounding us. We are focused to initialize a revolutionary step against all the odds of our modern day society. We believe in the fact that whatever is happening around us, we are the ones who can be held responsible for, and this belief of ours motivates us to fight against the issues like poverty, child labor, child abuse and many more.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Recycling</h4>
+            <p class="text-muted">We encourage our engineers to recycle the products and waste produced in different ways by spreading awareness among them.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">HealthCare</h4>
+            <p class="text-muted">Our team has organized various blood donation and health checkup camps in JIIT and also have gone to various slums to spread awareness for the same</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-venus-mars fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Empowerment</h4>
+            <p class="text-muted">We encourage gender equality and women empowerment for stopping harrasement. Also we encourage empoerement and upliftment of the poor for the same</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Photo Gallery</h2>
+            <h3 class="section-subheading text-muted">Glimpse of our events in JIIT.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/n.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Cracker Free Diwali</h4>
+              <p class="text-muted">Hello mother nature</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/i.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Quit Weed And Succeed</h4>
+              <p class="text-muted">High life!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/uu.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Tree Plantation</h4>
+              <p class="text-muted">Greenry everywhere</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/5.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Cloth Donation</h4>
+              <p class="text-muted">Providing clothes!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/p.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Diya Painting</h4>
+              <p class="text-muted">Create to empower</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'bot/images/events/f.jpg' %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Slum Visit</h4>
+              <p class="text-muted">Making slums happy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Timeline</h2>
+            <h3 class="section-subheading text-muted">What we have done till now.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{%static 'bot/img/about/1.jpg'%}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4> December 2014</h4>
+                    <h4 class="subheading">Our Humble Beginnings</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Our hub was founded at this year in the prestigious institue of JIIT. The hard work of founders and their dedication laid the foundations of this NGO in JIIT. And since then it has been fully operational and doing all kinds of social work in and out of the college.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{% static 'bot/img/about/diya1.jpg'%}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>July 2015</h4>
+                    <h4 class="subheading">Diya Painting Event</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">'<i><b>"Art enables uo to find ourselves and lose ourselvers at the same time." </b></i>Helping underprivleged chikdern forget their problems and dive into a world of art and craft filled with fun and love, we at IOE work for the betterment of each and every individual of the society treating the world as our family. '</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{% static 'bot/img/about/slum.jpg'%}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>February 2016</h4>
+                    <h4 class="subheading">A Visit to the Slum</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted"><i><b>"The slums are not a place of despair.Its inhabitants are all working towards a better life." </b></i>Keeping in mind that a lotus flower bloooms most beautifully in the thickest mud,we at IOE regularly visit slum areas and meet the chilren there. We organise fun sports meets and educational drives and help them spend a day full of fun and laughter.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{% static 'bot/img/about/weed.jpeg'%}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>November 2017</h4>
+                    <h4 class="subheading">Quit Weed and Succeed Drive</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted"><b><i>You don't need Heroin to be a Hero.</i></b> All the students came in to show their support agianst our drive to quit weed and succeed. Our motto- <b><i>Say no to drugs and yes to pizza</i></b></p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Founders</h2>
+            <h3 class="section-subheading text-muted">Cause they made us.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/members/Shaurya_S' %}ingh.png" alt="">
+              <h4>Shaurya Singh</h4>
+              <p class="text-muted">Founder</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/shaurya.singh.397">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/shaurya-singh-478220125/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/members/swati.jpg' %}" alt="">
+              <h4>Swati Sharma</h4>
+              <p class="text-muted">Teacher Cordinator</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/swati.sharma.921">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/members/Abhishek_' %}Vijay.png" alt="">
+              <h4>Abhishek Vijay</h4>
+              <p class="text-muted">Co-Founder</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/theabhishekvijay">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/abhishek-vijay-5412429b/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">These are the faces of IOE. They founded this NGO in JIIT with the vision to help the society and those in need keeping in mind the environmental needs. We at IOE are here to carry on their legacy to a whole new level.</p>
+            <br><br><br>
+          <a class="btn btn-primary btn-xl portfolio-link" data-toggle="modal" href="#portfolioModaldesc">Our Student Team !</a>
+          </div>
+        </div>
+      </div>
+
+      
+         
+        
+
+    </section>
+
+   
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">If You Wanna part of our team or collaborate with us!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" action='{% url 'ioe:contact' %}' method='post'>
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" {% block value_name %}{% endblock%} id="name" type="text" placeholder="Your Name *"  name='name' data-validation-required-message="Please enter your name.">
+                    {% block name%}
+                      <p class="help-block text-danger"></p>
+                    {% endblock %}
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" {% block value_email %}{% endblock%} id="email" type="email" placeholder="Your Email *"  name='email' data-validation-required-message="Please enter your email address.">
+                    {% block email%}
+                      <p class="help-block text-danger"></p>
+                    {% endblock %}
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" {% block value_phone %}{% endblock%} id="phone" type="tel" placeholder="Your Phone *"  name='phone' data-validation-required-message="Please enter your phone number.">
+                    {% block phone%}
+                      <p class="help-block text-danger"></p>
+                    {% endblock %}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *"  name='message' data-validation-required-message="Please enter a message.">{% block value_message %}{% endblock %}</textarea>
+                    {% block message%}
+                      <p class="help-block text-danger"></p>
+                    {% endblock %}
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {% block errors %}{% endblock %}
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; It's Our Earth 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCp03fUszrcGAHpYbC3Okj_g">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/ngoitsourearth/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/earthitsour/">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                Made with ♥ by <a href="https://www.linkedin.com/in/d-a-d-solutions-1b1394169/">D.A.D</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+
+<!-- Modal description -->
+    <div class="portfolio-modal modal fade" id="portfolioModaldesc" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">TEAM MEMBERS</h2>
+                  <p class="item-intro text-muted">The pillars on which our hub stands.</p>
+                  
+<div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Devansh_Alok.png' %}" alt="">
+              <h4>Devansh Alok</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Priyanshi_Gupta.png' %}" alt="">
+              <h4>Priyanshi Gupta</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Anuj_Saraswat_2.png' %}" alt="">
+              <h4>Anuj Saraswat</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Chhavi.HEIC' %}" alt="">
+              <h4>Chhavi Singhal</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Yash_Goel.png' %}" alt="">
+              <h4>Yash Goel</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Rohan.HEIC' %}" alt="">
+              <h4>Rohan Saxena</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Naman.HEIC' %}" alt="">
+              <h4>Naman Gupta</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Aarshi.HEIC' %}" alt="">
+              <h4>Aarshi Sirohi</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Anmol_.png' %}" alt="">
+              <h4>Anmol Kakkar</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Aditya_Singh.png' %}" alt="">
+              <h4>Aditya Singh</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/hardik_sharma.jpg' %}" alt="">
+              <h4>Hardik Sharma</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Yash.HEIC' %}" alt="">
+              <h4>Yashvardhan Verma</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Skandha.HEIC' %}" alt="">
+              <h4>Skandha Chaudhary</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/palak.jpg' %}" alt="">
+              <h4>Palak Arora</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Anant.HEIC' %}" alt="">
+              <h4>Anant Agarwal</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Aman Parmar.jpeg' %}" alt="">
+              <h4>Aman Parmar</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Hardik_17.png' %}" alt="">
+              <h4>Hardik Sharma</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Umang.HEIC' %}" alt="">
+              <h4>Umang Rastogi</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Ajay_Kushwaha.png' %}" alt="">
+              <h4>Ajay Kushwaha</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Palash_Rai.png' %}" alt="">
+              <h4>Palash Rai</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Kanishka_Parmar.png' %}" alt="">
+              <h4>Kanishka Parmar</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Ashray Sharma.jpeg' %}" alt="">
+              <h4>Ashray Sharma</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Deepanshu Gupta.png' %}" alt="">
+              <h4>Deepanshu Gupta</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Parimal_2.png' %}" alt="">
+              <h4>Parimal Mishra</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/akshay.jpg' %}" alt="">
+              <h4>Akshay</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Rupali.HEIC' %}" alt="">
+              <h4>Ruplai Maurya</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Priya.HEIC' %}" alt="">
+              <h4>Priya Bharadwaj</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Akanksha_Maurya_2.png' %}" alt="">
+              <h4>Akansha Maurya</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Yashvardhan Verma.jpeg' %}" alt="">
+              <h4>Yashwardhan Verma</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Ishaan.HEIC' %}" alt="">
+              <h4>Ishan Jain</h4>
+              
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Charu_Chauhan_2.png' %}" alt="">
+              <h4>Charu Chauhan</h4>
+               </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/Ankita_Vaishali.png' %}" alt="">
+              <h4>Ankita Vaishali</h4>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'bot/images/team/sandeep.JPG' %}" alt="">
+              <h4>Sandeep Kumar</h4>
+              
+            </div>
+          </div>
+
+        </div>
+
+                  <ul class="list-inline">
+                    <li>Together We Go!</li>
+                    <li>Together We Pursue!</li>
+                    <li>Together We Act!</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Go Back!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Cracker Free Diwali</h2>
+                  <p class="item-intro text-muted">Saving our Future Generations.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                  <p>When you burn a carcker you also burn your kids future. Lets leave a green healthy earth for them and celebrate the festival of lights theh way it was supposed to be celebrated. Keeping this in mind ,IOE organised a cracker free diwali campaaign to encourage students to avoid crackers and live a healthy pollution free life </p>
+
+<div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/z.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/x.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/c.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/v.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/b.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/n.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/m.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/l.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/k.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+                  <ul class="list-inline">
+                    <li>Light diyas</li>
+                    <li>Not crakers</li>
+                    <li>And save the earth</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close event</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">QWAS</h2>
+                  <p class="item-intro text-muted">Get high on grades not weed.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                  <p>You dont need heroin to be hero. All the students came in show their support for our quit weed and succeed drive. Our motto-"Say no to Drugs and Yes to pizza ;)
+                  "</p>
+                 <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/i.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/u.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/y.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/t.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/r.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/e.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/w.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/q.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/aa.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+                  <ul class="list-inline">
+                    <li>Say no to drugs </li>
+                    <li>Say yes to pizza</li>
+                    <li>Say yes to life</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close event</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Tree Plantation</h2>
+                  <p class="item-intro text-muted">Giving back what we take.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                  <p>Reversing deforestation is complicated; planting a tree is simple. Its the little things we do that makes all the difference. IOE's little thing was a tree plantation drive organised for all the students and faculty members. everyone showed up to do their bit for our mother nature</p>
+
+                       <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/xx.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/cc.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/vv.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/bb.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/nn.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/mm.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/pp.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/oo.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/uu.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+                  <ul class="list-inline">
+                    <li>Plant Trees</li>
+                    <li>And save our earth</li>
+                    
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close event</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Cloth Donation</h2>
+                  <p class="item-intro text-muted">A help in need is a help indeed.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                  <p>Tears of a mother cannot save a child but your blood can. To the young and healthy its no oss.To the sick its a hope of life. Donate blood to give back life. With this ideology,IOE keeps organising blood donation drives at regular intervals to save the person in need.</p>
+                       <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/1.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/2.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/3.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/3.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/4.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/5.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/6.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/7.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/8.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+            <ul class="list-inline">
+                    <li>A help in need</li>
+                    <li>Is help in deed</li>
+                    <li>So we help!</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close event</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Diya Painting</h2>
+                  <p class="item-intro text-muted">Doing work tosave the child.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                  <p>"Art enables us to find ourselves and lose ourseleves at the same time". Helping underpriviedged children forget their problems and dive into a world to art and craft filled with fun and love, we at IOE work for the betterment of each and every individual of the society treating every individual of the socity as our family</p>
+                  <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/j.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/h.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/g.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/f.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/d.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/s.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/a.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/p.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/o.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Slum Visit</h2>
+                  <p class="item-intro text-muted">Fun and frolic in the slum.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                  <p>the slums are not a place of despair its inhabitants are all working towards a better life
+                . Keeping in mind that alotus flower blooms most beautifully in the thick mud we at IOE regularly visit the slum area and meet the children there. We organise fun sports meets and educational drives and help them spend a day full of fun and laughter </p>
+                     <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/ss.jpg' %}" alt="">
+             
+               </div>
+          </div>
+
+
+
+         <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/dd.jpg' %}" alt="">
+             
+               </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto" src="{% static 'bot/images/events/ff.jpg' %}" alt="">
+              
+               </div>
+          </div>
+
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/gg.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/hh.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/jj.jpg' %}" alt="">
+             
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/kk.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/ll.jpg' %}" alt="">
+              
+               </div>
+          </div>
+<div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto " src="{% static 'bot/images/events/zz.jpg' %}" alt="">
+              
+               </div>
+          </div>
+        </div>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'bot/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'bot/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Contact form JavaScript -->
+    <!-- <script src="{% static 'bot/js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'bot/js/contact_me.js' %}"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'bot/js/agency.min.js' %}"></script>
+
+  </body>
+
+</html>

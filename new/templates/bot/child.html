@@ -1,0 +1,135 @@
+{% extends 'bot/index.html' %}
+
+{% if error_name %}
+    {% block name %}
+        <b><p class="help-block text-danger"> {{ error_name }} </p></b>
+    {% endblock %}
+{% endif %}
+
+{% if error_email %}
+    {% block email %} 
+        <b><p class="help-block text-danger">{{ error_email }}</p></b>
+    {% endblock %}
+{% endif %}
+
+{% if error_phone %}
+    {% block phone %} 
+        <b><p class="help-block text-danger">{{ error_phone}}</p></b>
+    {% endblock %}
+{% endif %}
+
+{% if error_message %}
+    {% block message %} 
+        <b><p class="help-block text-danger"> {{ error_message}} </p></b>
+    {% endblock %}
+{% endif %}
+
+<!-- {% block model%}
+    <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"> Thank you for contacting us..</i>
+            </div>
+          </div>
+        </a>
+    </div>
+{% endblock %} -->
+
+    {% block extra_js %}
+    {% if not val %}
+
+        <!-- Modal Message -->
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#portfolioModalmess').modal('show');
+            });
+        </script>
+        {% endif %}
+    {% endblock %}
+
+
+{% block modal %}
+    {% if not val %}
+        <div class="portfolio-modal modal fade" id="portfolioModalmess" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <!-- <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                    <div class="rl"></div>
+                    </div>
+                </div> -->
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2 class="text-uppercase">Thank You for Reaching Us !</h2>
+                        <p class="item-intro text-muted">We Will Get Back Toyou As Soon As We can.</p>
+                        <form action='{% url 'ioe:red' %}' method='post'>
+                            {% csrf_token %}
+                            <button class="btn btn-primary"  type="submit">
+                                <i class="fa fa-times"></i>
+                                Go to home!</button>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    {% endif %}
+{% endblock %}
+
+{% block errors %}
+    {% if val %}
+        <script type="text/javascript">
+    // $("a").click(function(){
+                // $(window).on('load',function(){
+                    
+                // });
+               
+				var scroll= $(window).scrollTop();
+                console.log(scroll)
+                var x = $('#contact').position().top;
+                if (x){
+                    console.log(x)
+                }
+                else{
+                    console.log("error in reading the val")
+                }
+				scroll= scroll+ x;
+                console.log(scroll)
+				$('html, body').animate({
+					scrollTop: scroll
+				}, 500);
+
+        </script>
+    {% endif %}
+{% endblock%}
+
+{% block value_name%}
+    {% if val and not error_name %}
+            value=  {{ name_val }}
+    {% endif%}
+{% endblock %}
+
+{% block value_email %}
+    {% if val and not error_email %}
+        value={{ email_val }}
+    {% endif%}
+{% endblock %}
+
+{% block value_phone%}
+    {% if val and not error_phone %}
+        value={{ phone_val }}
+    {% endif%}
+{% endblock %}
+
+{% block value_message%}
+    {% if val and not error_message %}
+        {{ message_val }}
+    {% endif%}
+{% endblock %}
+
